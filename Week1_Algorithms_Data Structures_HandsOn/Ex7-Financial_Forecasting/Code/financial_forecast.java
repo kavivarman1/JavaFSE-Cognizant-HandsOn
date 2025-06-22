@@ -3,7 +3,7 @@ package Financial_Forecast;
 public class financial_forecast {
 
     public static double forecastValue(double currentValue, double growthRate, int years) {
-        if (years == 0) return currentValue;  // base case
+        if (years == 0) return currentValue;
         return forecastValue(currentValue, growthRate, years - 1) * (1 + growthRate);
     }
 
